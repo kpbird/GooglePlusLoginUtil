@@ -1,7 +1,9 @@
 Login with Google Plus Utility
 ----------
 ### Pre-requisite###
+
 Official Document: https://developers.google.com/+/mobile/android/sign-in
+
 Tutorial from AndroidHive : http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/
 
 Note: Please read AndroidHive article for initial setup & other process
@@ -16,9 +18,10 @@ Note: Please read AndroidHive article for initial setup & other process
 
 #### Step 3: Declare callback method
 	public void OnSuccessGPlusLogin(Bundle profile) {
-		     Log.i(TAG,profile.getString(GooglePlusLoginUtils.NAME));        Log.i(TAG,profile.getString(GooglePlusLoginUtils.EMAIL));
-	Log.i(TAG,profile.getString(GooglePlusLoginUtils.PHOTO));
-	Log.i(TAG,profile.getString(GooglePlusLoginUtils.PROFILE));
+		Log.i(TAG,profile.getString(GooglePlusLoginUtils.NAME));       
+		Log.i(TAG,profile.getString(GooglePlusLoginUtils.EMAIL));
+		Log.i(TAG,profile.getString(GooglePlusLoginUtils.PHOTO));
+		Log.i(TAG,profile.getString(GooglePlusLoginUtils.PROFILE));
     }
 
 #### Step 4: Declare object of GooglePlusLoginUtils.java
@@ -29,22 +32,22 @@ Note: Please read AndroidHive article for initial setup & other process
         gLogin.setLoginStatus(this);
 #### Step 6: Declare few supporting methods 
 
- @Override
-    protected void onStart() {
-        super.onStart();
-        gLogin.connect();
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        gLogin.disconnect();
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int responseCode,
-                                    Intent intent) {
-        gLogin.onActivityResult(requestCode, responseCode, intent);
-
-    }
+	@Override
+	protected void onStart() {
+	        super.onStart();
+	        gLogin.connect();
+	    }
+	    @Override
+	    protected void onStop() {
+	        super.onStop();
+	        gLogin.disconnect();
+	    }
+	    @Override
+	    protected void onActivityResult(int requestCode, int responseCode,
+	                                    Intent intent) {
+	        gLogin.onActivityResult(requestCode, responseCode, intent);
+	
+	    }
 
 ### FAQ###
 Q: What is problem of above approach ?
