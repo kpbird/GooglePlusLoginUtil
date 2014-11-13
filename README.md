@@ -50,10 +50,10 @@ Note: Please read AndroidHive article for initial setup & other process
 	    }
 
 ### FAQ###
-Q: What is problem of above approach ?
-A: You activity has lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.
+Q: What is the problem of above approach ?
+A: You activity has a lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.
 
-Q: How I will receive response for login success?
+Q: How I will receive a response for login success?
 A: You need to implement interface "GPlusloginStatus", on successful login you will receive callback "OnSuccessGPlusLogin"
 
 Q: What will be received on login success ?
