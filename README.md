@@ -1,6 +1,6 @@
 Login with Google Plus Utility
 ----------
-### Pre-requisite###
+### Pre-requisite ###
 
 Official Document: https://developers.google.com/+/mobile/android/sign-in
 
@@ -49,10 +49,10 @@ Note: Please read AndroidHive article for initial setup & other process
 	
 	    }
 
-### FAQ###
+### FAQ ###
 Q: What is the problem of above approach ?
 
-A: You activity has a lot of scattered code for Google Pluse login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.
+A: You activity has a lot of scattered code for Google Plus login, It will be more complex and unmanageable when you will have another social network login like Facebook and Twitter.
 
 Q: How I will receive a response for login success?
 
@@ -65,6 +65,3 @@ A: You will have Display name, Email , Photo and Profile url.
 Q: Do I need to handle login failure / error ?
 
 A: No, GooglePlusLoginUtils.java will handle login failure, error and display appropriate message on screen.   
-
-
-   
